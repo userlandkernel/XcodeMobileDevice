@@ -5,3 +5,10 @@ I refer to excemptions stated in the DMCA act for educational use Section 1201(a
 The code presented here is solely for the purpose of educating developers, not for them to make use of it.  
 If GitHub will proceed action when any of the involved parties claims a DMCA violation is made, I have good beliefs to think that will be an act of censorship.  
 
+# People to thank
+- Steve Nygard (Class-dump)
+
+# Contributing?
+- Remove the properties and methods from the headers that break using the frameworks (eg dealloc).
+- Add examples of using a framework
+- Generate / manually make TBD linker files?
