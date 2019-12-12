@@ -15,11 +15,11 @@
     id _assertionRef;
 }
 
-- (void).cxx_destruct;
 @property(retain) id assertionRef; // @synthesize assertionRef=_assertionRef;
+- (void).cxx_destruct;
 - (void)cancel;
-- (void)dealloc;
 @property(readonly, getter=isCancelled) BOOL cancelled;
+- (void)dealloc;
 
 // Remaining properties
 @property(readonly, copy) NSString *debugDescription;

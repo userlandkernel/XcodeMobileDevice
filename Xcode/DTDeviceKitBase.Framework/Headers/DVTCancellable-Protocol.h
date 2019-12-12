@@ -7,7 +7,7 @@
 #import <DTDeviceKitBase/NSObject-Protocol.h>
 
 @protocol DVTCancellable <NSObject>
-- (void)cancel;
 @property(readonly, getter=isCancelled) BOOL cancelled;
+- (void)cancel;
 @end
 

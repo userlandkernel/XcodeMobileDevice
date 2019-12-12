@@ -16,23 +16,23 @@
 
 + (id)specTokenForDeviceIdentifier:(id)arg1;
 - (void).cxx_destruct;
-- (long long)_NSIntegerForKeyInTokenProperties:(id)arg1;
-- (id)_objectForKeyInTokenProperties:(id)arg1;
-- (id)buildVersion;
-- (id)developerDiskImageForDeviceType:(id)arg1 productVersion:(id)arg2 buildVersion:(id)arg3;
-- (id)deviceArchitecture;
-- (id)deviceClass;
 - (long long)deviceNFSPort;
 - (long long)deviceRsyncPort;
+- (long long)deviceTelnetPort;
 - (long long)deviceSSHPort;
+- (id)supportedDeviceFamilies;
+- (id)deviceArchitecture;
+- (id)deviceType;
+- (id)buildVersion;
+- (id)productVersion;
+- (id)deviceClass;
 - (id)deviceSerialNumber;
 - (id)deviceSoftwareVersion;
-- (long long)deviceTelnetPort;
-- (id)deviceType;
-- (id)initWithDeviceIdentifier:(id)arg1 tokenProperties:(id)arg2;
 - (id)platform;
-- (id)productVersion;
-- (id)supportedDeviceFamilies;
+- (long long)_NSIntegerForKeyInTokenProperties:(id)arg1;
+- (id)_objectForKeyInTokenProperties:(id)arg1;
+- (id)developerDiskImageForDeviceType:(id)arg1 productVersion:(id)arg2 buildVersion:(id)arg3;
+- (id)initWithDeviceIdentifier:(id)arg1 tokenProperties:(id)arg2;
 
 @end
 

@@ -12,12 +12,12 @@
 - (void)primitiveInvalidate;
 
 @optional
-+ (unsigned long long)assertionBehaviorAfterEndOfEventForSelector:(SEL)arg1;
-+ (unsigned long long)assertionBehaviorForKeyValueObservationsAtEndOfEvent;
 + (BOOL)supportsInvalidationPrevention;
++ (unsigned long long)assertionBehaviorForKeyValueObservationsAtEndOfEvent;
++ (unsigned long long)assertionBehaviorAfterEndOfEventForSelector:(SEL)arg1;
 @property(retain) DVTStackBacktrace *creationBacktrace;
-- (void)invalidate;
 @property(readonly) DVTStackBacktrace *invalidationBacktrace;
 @property(readonly, nonatomic, getter=isValid) BOOL valid;
+- (void)invalidate;
 @end
 

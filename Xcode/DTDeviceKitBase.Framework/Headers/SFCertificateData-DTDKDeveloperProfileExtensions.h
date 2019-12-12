@@ -7,7 +7,7 @@
 #import <SecurityFoundation/SFCertificateData.h>
 
 @interface SFCertificateData (DTDKDeveloperProfileExtensions)
-- (id)children;
 - (id)displayStatus;
+- (id)children;
 @end
 

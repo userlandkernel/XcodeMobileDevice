@@ -12,12 +12,12 @@
 
 + (id)itemWithParent:(id)arg1 andName:(id)arg2 error:(id *)arg3;
 + (id)itemWithParent:(id)arg1 fromLocalDirectory:(id)arg2 error:(id *)arg3;
+- (void)refresh;
+- (_Bool)isLeaf;
+- (id)sandboxFileBases;
 - (_Bool)downloadOptimizationProfilesToFile:(id)arg1 error:(id *)arg2;
 - (_Bool)downloadToFile:(id)arg1 error:(id *)arg2;
-- (_Bool)isLeaf;
-- (void)refresh;
 - (_Bool)removeFromDeviceWithError:(id *)arg1;
-- (id)sandboxFileBases;
 
 @end
 

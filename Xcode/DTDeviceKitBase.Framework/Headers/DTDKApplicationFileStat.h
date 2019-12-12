@@ -16,11 +16,11 @@
     NSString *_deviceModificationTimeString;
 }
 
-- (void).cxx_destruct;
-@property(copy) NSString *deviceFileSizeString; // @synthesize deviceFileSizeString=_deviceFileSizeString;
-@property _Bool deviceIsDir; // @synthesize deviceIsDir=_deviceIsDir;
-@property _Bool deviceIsLnk; // @synthesize deviceIsLnk=_deviceIsLnk;
 @property(copy) NSString *deviceModificationTimeString; // @synthesize deviceModificationTimeString=_deviceModificationTimeString;
+@property(copy) NSString *deviceFileSizeString; // @synthesize deviceFileSizeString=_deviceFileSizeString;
+@property _Bool deviceIsLnk; // @synthesize deviceIsLnk=_deviceIsLnk;
+@property _Bool deviceIsDir; // @synthesize deviceIsDir=_deviceIsDir;
+- (void).cxx_destruct;
 
 @end
 

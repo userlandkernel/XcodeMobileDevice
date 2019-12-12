@@ -19,30 +19,30 @@
     NSArray *_provisioningProfileSearchPaths;
 }
 
-+ (id)controller;
-+ (id)controllerWithProvisioningProfileSearchPaths:(id)arg1;
 + (id)keyPathsForValuesAffectingAllUsableProfiles;
-+ (id)mobileDeviceSupportSearchPaths;
 + (id)standardProvisioningProfileSearchPaths;
-- (void).cxx_destruct;
-- (void)_profilePathsOrDirectoriesChanged:(id)arg1;
-- (void)_updateProfilesWithAdditions:(id)arg1 andRemovals:(id)arg2;
-- (BOOL)_writeProfiles:(id)arg1 error:(id *)arg2;
-@property(readonly, copy) NSSet *allProfiles;
-- (id)allProfiles_sync;
-@property(readonly, copy) NSSet *allUsableProfiles;
-- (id)certificateUtilities;
-- (void)deleteProvisioningProfiles:(id)arg1;
-- (void)fsEventReceived:(id)arg1;
-@property(readonly) BOOL hasCompletedInitialScan; // @synthesize hasCompletedInitialScan=_hasCompletedInitialScan;
-- (id)initWithProvisioningProfileSearchPaths:(id)arg1;
-- (void)installProvisioningProfiles:(id)arg1 callback:(CDUnknownBlockType)arg2;
-- (id)profileMatchingUUID:(id)arg1;
-- (id)profilesMatchingApplicationID:(id)arg1;
-- (id)profilesMatchingCertificate:(struct OpaqueSecCertificateRef *)arg1;
-- (id)profilesMatchingPredicate:(id)arg1;
++ (id)mobileDeviceSupportSearchPaths;
++ (id)controllerWithProvisioningProfileSearchPaths:(id)arg1;
++ (id)controller;
 @property(readonly) NSArray *provisioningProfileSearchPaths; // @synthesize provisioningProfileSearchPaths=_provisioningProfileSearchPaths;
+@property(readonly) BOOL hasCompletedInitialScan; // @synthesize hasCompletedInitialScan=_hasCompletedInitialScan;
+- (void).cxx_destruct;
+@property(readonly, copy) NSSet *allUsableProfiles;
+- (void)_updateProfilesWithAdditions:(id)arg1 andRemovals:(id)arg2;
+- (void)_profilePathsOrDirectoriesChanged:(id)arg1;
+- (void)fsEventReceived:(id)arg1;
+- (id)allProfiles_sync;
+@property(readonly, copy) NSSet *allProfiles;
 - (void)startScanIfNeeded:(BOOL)arg1;
+- (id)profilesMatchingCertificate:(struct OpaqueSecCertificateRef *)arg1;
+- (id)profilesMatchingApplicationID:(id)arg1;
+- (id)profileMatchingUUID:(id)arg1;
+- (id)profilesMatchingPredicate:(id)arg1;
+- (void)installProvisioningProfiles:(id)arg1 callback:(CDUnknownBlockType)arg2;
+- (BOOL)_writeProfiles:(id)arg1 error:(id *)arg2;
+- (void)deleteProvisioningProfiles:(id)arg1;
+- (id)certificateUtilities;
+- (id)initWithProvisioningProfileSearchPaths:(id)arg1;
 
 @end
 

@@ -15,9 +15,9 @@
     struct _MISProfile *_profile;
 }
 
+- (id)profilePropertyForKey:(id)arg1;
 - (void)dealloc;
 - (id)initWithData:(id)arg1;
-- (id)profilePropertyForKey:(id)arg1;
 
 // Remaining properties
 @property(readonly, copy) NSString *debugDescription;

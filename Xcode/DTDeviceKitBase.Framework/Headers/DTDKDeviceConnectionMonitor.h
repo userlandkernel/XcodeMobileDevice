@@ -15,15 +15,15 @@
     DTDKRemoteDeviceConnection *_connection;
 }
 
-+ (id)keyPathsForValuesAffectingAverageLatency;
 + (id)keyPathsForValuesAffectingPacketRatio;
++ (id)keyPathsForValuesAffectingAverageLatency;
 + (id)monitorWithConnection:(id)arg1;
+@property(retain) DTDKRemoteDeviceConnection *connection; // @synthesize connection=_connection;
 - (void).cxx_destruct;
+@property(readonly) double packetRatio;
 @property(readonly) double averageLatency;
 - (void)cancel;
-@property(retain) DTDKRemoteDeviceConnection *connection; // @synthesize connection=_connection;
 @property(readonly, getter=isCancelled) BOOL cancelled;
-@property(readonly) double packetRatio;
 
 // Remaining properties
 @property(readonly, copy) NSString *debugDescription;

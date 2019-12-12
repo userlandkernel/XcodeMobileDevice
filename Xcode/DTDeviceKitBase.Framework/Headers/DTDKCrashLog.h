@@ -12,20 +12,20 @@
 {
 }
 
-+ (id)entityName;
 + (id)keyPathsForValuesAffectingDateString;
-+ (id)keyPathsForValuesAffectingDisplayName;
 + (id)keyPathsForValuesAffectingFilename;
 + (id)keyPathsForValuesAffectingRawText;
 + (id)keyPathsForValuesAffectingText;
++ (id)keyPathsForValuesAffectingDisplayName;
++ (id)entityName;
+- (void)resymbolicate;
+- (void)symbolicate;
 @property(readonly, nonatomic) NSString *dateString;
-@property(readonly, nonatomic) NSString *displayName;
 @property(readonly, nonatomic) NSString *filename;
 @property(retain, nonatomic) NSString *rawText;
-- (void)resymbolicate;
 @property(retain, nonatomic) NSString *text;
-- (void)symbolicate;
 - (void)updateModelLayout;
+@property(readonly, nonatomic) NSString *displayName;
 
 // Remaining properties
 @property(retain, nonatomic) NSMutableSet *binaryImages; // @dynamic binaryImages;
