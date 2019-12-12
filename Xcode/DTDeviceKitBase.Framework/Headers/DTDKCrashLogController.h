@@ -14,19 +14,19 @@
     NSString *_symbolicationStatus;
 }
 
-+ (id)keyPathsForValuesAffectingStatusMessage;
 + (id)controller;
-@property(copy) NSString *symbolicationStatus; // @synthesize symbolicationStatus=_symbolicationStatus;
++ (id)keyPathsForValuesAffectingStatusMessage;
 - (void).cxx_destruct;
-- (void)enqueueLogForSymbolication:(id)arg1;
-- (id)crashLogs;
+- (Class)_database;
 - (void)copyExternalCrashLog:(id)arg1;
-- (_Bool)shouldAcceptDroppedCrashLogAtPath:(id)arg1;
 - (id)crashLogRootDirectory;
+- (id)crashLogs;
+@property(readonly) _Bool enableCrashLogSupport;
+- (void)enqueueLogForSymbolication:(id)arg1;
 - (id)legacyRootDirectory;
 @property(copy) NSString *statusMessage; // @synthesize statusMessage=_statusMessage;
-- (Class)_database;
-@property(readonly) _Bool enableCrashLogSupport;
+@property(copy) NSString *symbolicationStatus; // @synthesize symbolicationStatus=_symbolicationStatus;
+- (_Bool)shouldAcceptDroppedCrashLogAtPath:(id)arg1;
 
 @end
 

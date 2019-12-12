@@ -7,7 +7,7 @@
 #import <DTDeviceKitBase/DVTCancellable-Protocol.h>
 
 @protocol DTDKDeviceConnectionMonitor <DVTCancellable>
-@property(readonly) double packetRatio;
 @property(readonly) double averageLatency;
+@property(readonly) double packetRatio;
 @end
 

@@ -24,14 +24,14 @@
 
 + (id)consoleStringWithData:(id)arg1 startingAtOffset:(unsigned long long)arg2;
 + (id)controllerForDevice:(id)arg1;
-@property __weak DTDKRemoteDeviceToken *token; // @synthesize token=_token;
-@property(retain) id <DTDKRemoteDeviceConsoleControllerDelegate> delegate; // @synthesize delegate=_delegate;
 - (void).cxx_destruct;
-@property(readonly, copy) NSString *consoleString;
 - (void)clear;
-- (void)reload;
-- (void)invalidate;
+@property(readonly, copy) NSString *consoleString;
 - (void)dealloc;
+@property(retain) id <DTDKRemoteDeviceConsoleControllerDelegate> delegate; // @synthesize delegate=_delegate;
+- (void)invalidate;
+- (void)reload;
+@property __weak DTDKRemoteDeviceToken *token; // @synthesize token=_token;
 
 @end
 

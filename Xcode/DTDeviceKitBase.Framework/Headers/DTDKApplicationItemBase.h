@@ -15,41 +15,41 @@
     DTDKApplicationItemBase *_parent;
 }
 
-+ (BOOL)shouldProcessPath:(id)arg1;
-+ (id)keyPathsForValuesAffectingMutableChildren;
++ (id)alloc;
++ (id)keyPathsForValuesAffectingApplication;
 + (id)keyPathsForValuesAffectingDevicePath;
 + (id)keyPathsForValuesAffectingIsFairPlayEncrypted;
-+ (id)keyPathsForValuesAffectingApplication;
-+ (id)alloc;
-@property __weak DTDKApplicationItemBase *parent; // @synthesize parent=_parent;
++ (id)keyPathsForValuesAffectingMutableChildren;
++ (BOOL)shouldProcessPath:(id)arg1;
 - (void).cxx_destruct;
-- (id)childNamed:(id)arg1;
-- (long long)compare:(id)arg1;
-- (unsigned long long)hash;
-- (BOOL)isEqual:(id)arg1;
-@property(readonly) _Bool isLeaf;
-- (void)removeChildrenObject:(id)arg1;
-- (void)addChildrenObject:(id)arg1;
-@property(readonly) NSMutableSet *mutableChildren;
-@property(copy) NSSet *children;
-@property(readonly, copy) NSString *devicePath;
-@property(readonly) _Bool isFairPlayEncrypted;
-@property(readonly, copy) NSString *name;
-@property(readonly, copy) NSString *subPath;
-@property(readonly, copy) NSString *containerPath;
-@property(readonly, copy) NSString *identifier;
-@property(readonly, copy) NSString *deviceIdentifier;
 - (_Bool)_withConnection:(CDUnknownBlockType)arg1;
+- (void)addChildrenObject:(id)arg1;
 @property(readonly) DTDKApplication *application;
-- (_Bool)removeFromDeviceWithError:(id *)arg1;
-- (_Bool)uploadFile:(id)arg1 error:(id *)arg2;
-- (id)sandboxFileBases;
+- (id)childNamed:(id)arg1;
+@property(copy) NSSet *children;
+- (long long)compare:(id)arg1;
+@property(readonly, copy) NSString *containerPath;
+- (void)dealloc;
+@property(readonly, copy) NSString *deviceIdentifier;
+@property(readonly, copy) NSString *devicePath;
 - (_Bool)downloadOptimizationProfilesToFile:(id)arg1 error:(id *)arg2;
 - (_Bool)downloadToFile:(id)arg1 error:(id *)arg2;
-- (void)lazyRefresh;
-- (void)refresh;
+- (unsigned long long)hash;
+@property(readonly, copy) NSString *identifier;
 - (void)invalidate;
-- (void)dealloc;
+- (BOOL)isEqual:(id)arg1;
+@property(readonly) _Bool isFairPlayEncrypted;
+@property(readonly) _Bool isLeaf;
+- (void)lazyRefresh;
+@property(readonly) NSMutableSet *mutableChildren;
+@property(readonly, copy) NSString *name;
+@property __weak DTDKApplicationItemBase *parent; // @synthesize parent=_parent;
+- (void)refresh;
+- (void)removeChildrenObject:(id)arg1;
+- (_Bool)removeFromDeviceWithError:(id *)arg1;
+- (id)sandboxFileBases;
+@property(readonly, copy) NSString *subPath;
+- (_Bool)uploadFile:(id)arg1 error:(id *)arg2;
 
 @end
 

@@ -10,39 +10,39 @@
 {
 }
 
-+ (void)unsymbolicateCrashLogs:(id)arg1;
-+ (void)forceSymbolicateCrashLogs:(id)arg1;
-+ (void)symbolicateCrashLogs:(id)arg1;
-+ (void)deleteCrashLogs:(id)arg1;
-+ (_Bool)importCrashLogAtURL:(id)arg1;
-+ (_Bool)importCrashLogs:(id)arg1;
-+ (id)_loadCrashLogMetadata:(id)arg1;
++ (_Bool)_fixVersionHashesAt:(id)arg1 error:(id *)arg2;
 + (id)_incidentIdentifierForCrashLogAtURL:(id)arg1;
-+ (id)dsymForUUID:(id)arg1 inContext:(id)arg2;
-+ (id)dsymsForPath:(id)arg1 inContext:(id)arg2;
-+ (id)dsymsInContext:(id)arg1;
-+ (id)dsymMatchingPredicate:(id)arg1 inContext:(id)arg2;
-+ (id)dsymsMatchingPredicate:(id)arg1 inContext:(id)arg2;
++ (id)_loadCrashLogMetadata:(id)arg1;
++ (id)_managedObjectModel;
 + (id)binaryImageForUUID:(id)arg1 inContext:(id)arg2;
-+ (id)binaryImagesInContext:(id)arg1;
 + (id)binaryImageMatchingPredicate:(id)arg1 inContext:(id)arg2;
++ (id)binaryImagesInContext:(id)arg1;
 + (id)binaryImagesMatchingPredicate:(id)arg1 inContext:(id)arg2;
 + (id)crashLogForIncidentIdentifier:(id)arg1 inContext:(id)arg2;
-+ (id)crashLogsInContext:(id)arg1;
 + (id)crashLogMatchingPredicate:(id)arg1 inContext:(id)arg2;
++ (id)crashLogsInContext:(id)arg1;
 + (id)crashLogsMatchingPredicate:(id)arg1 inContext:(id)arg2;
-+ (id)objectsWithEntityName:(id)arg1 MatchingPredicate:(id)arg2 inContext:(id)arg3;
-+ (void)startMigration;
++ (void)deleteCrashLogs:(id)arg1;
++ (id)dsymForUUID:(id)arg1 inContext:(id)arg2;
++ (id)dsymMatchingPredicate:(id)arg1 inContext:(id)arg2;
++ (id)dsymsForPath:(id)arg1 inContext:(id)arg2;
++ (id)dsymsInContext:(id)arg1;
++ (id)dsymsMatchingPredicate:(id)arg1 inContext:(id)arg2;
++ (void)forceSymbolicateCrashLogs:(id)arg1;
 + (_Bool)hasFinishedMigration;
-+ (id)temporaryMoc;
++ (_Bool)importCrashLogAtURL:(id)arg1;
++ (_Bool)importCrashLogs:(id)arg1;
++ (unsigned long long)lastScanEventId;
 + (id)mainThreadMoc;
 + (id)moc;
-+ (_Bool)_fixVersionHashesAt:(id)arg1 error:(id *)arg2;
++ (id)objectsWithEntityName:(id)arg1 MatchingPredicate:(id)arg2 inContext:(id)arg3;
 + (id)persistentStoreOptions;
-+ (id)_managedObjectModel;
 + (void)setLastScanEventId:(unsigned long long)arg1;
-+ (unsigned long long)lastScanEventId;
 + (void)startFSEvents;
++ (void)startMigration;
++ (void)symbolicateCrashLogs:(id)arg1;
++ (id)temporaryMoc;
++ (void)unsymbolicateCrashLogs:(id)arg1;
 
 @end
 

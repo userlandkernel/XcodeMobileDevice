@@ -15,8 +15,8 @@
 
 + (id)resultWithNumberOfIdentities:(unsigned long long)arg1 numberOfProfiles:(unsigned long long)arg2 numberOfAccounts:(unsigned long long)arg3;
 @property(readonly) unsigned long long numberOfAccounts; // @synthesize numberOfAccounts=_numberOfAccounts;
-@property(readonly) unsigned long long numberOfProfiles; // @synthesize numberOfProfiles=_numberOfProfiles;
 @property(readonly) unsigned long long numberOfIdentities; // @synthesize numberOfIdentities=_numberOfIdentities;
+@property(readonly) unsigned long long numberOfProfiles; // @synthesize numberOfProfiles=_numberOfProfiles;
 
 @end
 

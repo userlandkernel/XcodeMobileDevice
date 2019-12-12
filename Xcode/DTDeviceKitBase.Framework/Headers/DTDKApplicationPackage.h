@@ -11,24 +11,24 @@
 }
 
 + (id)item;
-- (_Bool)uploadFile:(id)arg1 syncRecords:(id)arg2 resultingSyncRecords:(id)arg3 error:(id *)arg4;
-- (_Bool)_processUploadOf:(id)arg1 devicePath:(id)arg2 syncRecords:(id)arg3 resultingSyncRecords:(id)arg4 error:(id *)arg5;
-- (void)_createDirAtDevicePath:(id)arg1;
-- (void)_removeFileOrDirAtDevicePath:(id)arg1;
-- (id)_readDeviceDirectory:(id)arg1;
 - (id)_afc_stat:(id)arg1;
-- (id)modificationInfoStringForLocalPath:(id)arg1;
 - (BOOL)_copyFile:(id)arg1 toDevicePath:(id)arg2 error:(id *)arg3;
-- (_Bool)uploadFile:(id)arg1 error:(id *)arg2;
+- (void)_createDirAtDevicePath:(id)arg1;
+- (void)_notifyFinishOfDownload;
 - (void)_notifyFinishOfUpload;
+- (void)_notifyStartOfDownload;
 - (void)_notifyStartOfUpload;
-- (id)sandboxFileBases;
+- (_Bool)_processUploadOf:(id)arg1 devicePath:(id)arg2 syncRecords:(id)arg3 resultingSyncRecords:(id)arg4 error:(id *)arg5;
+- (id)_readDeviceDirectory:(id)arg1;
+- (void)_removeFileOrDirAtDevicePath:(id)arg1;
 - (_Bool)downloadOptimizationProfilesToFile:(id)arg1 error:(id *)arg2;
 - (_Bool)downloadToFile:(id)arg1 error:(id *)arg2;
-- (void)_notifyFinishOfDownload;
-- (void)_notifyStartOfDownload;
-- (id)subPath;
+- (id)modificationInfoStringForLocalPath:(id)arg1;
 - (id)name;
+- (id)sandboxFileBases;
+- (id)subPath;
+- (_Bool)uploadFile:(id)arg1 error:(id *)arg2;
+- (_Bool)uploadFile:(id)arg1 syncRecords:(id)arg2 resultingSyncRecords:(id)arg3 error:(id *)arg4;
 
 @end
 

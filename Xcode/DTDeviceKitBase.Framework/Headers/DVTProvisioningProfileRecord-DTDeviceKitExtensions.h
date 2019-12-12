@@ -8,7 +8,7 @@
 
 @interface DVTProvisioningProfileRecord (DTDeviceKitExtensions)
 + (void)installProfileRecords:(id)arg1;
-- (void)updateUUID;
 - (id)profile;
+- (void)updateUUID;
 @end
 

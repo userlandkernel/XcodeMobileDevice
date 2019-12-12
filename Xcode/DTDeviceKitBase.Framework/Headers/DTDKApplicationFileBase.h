@@ -14,11 +14,11 @@
 }
 
 + (id)itemWithName:(id)arg1;
-@property(copy) NSString *name; // @synthesize name=_name;
 - (void).cxx_destruct;
-- (_Bool)removeFromDeviceWithError:(id *)arg1;
 - (unsigned long long)hash;
 - (BOOL)isEqual:(id)arg1;
+@property(copy) NSString *name; // @synthesize name=_name;
+- (_Bool)removeFromDeviceWithError:(id *)arg1;
 
 @end
 

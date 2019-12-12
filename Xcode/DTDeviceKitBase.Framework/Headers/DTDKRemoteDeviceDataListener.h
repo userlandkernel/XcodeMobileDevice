@@ -19,19 +19,19 @@
 }
 
 + (id)sharedInstance;
-@property(nonatomic) struct _AMDeviceNotificationContext *deviceNotificationRef; // @synthesize deviceNotificationRef=_deviceNotificationRef;
-@property(retain) NSThread *listenerThread; // @synthesize listenerThread=_listenerThread;
 - (void).cxx_destruct;
 - (void)_rescan;
-- (void)enumerateDevicesWithBlock:(CDUnknownBlockType)arg1;
-- (id)allDevices;
 - (id)allConnections;
-- (void)presentError:(id)arg1;
-- (void)listenerThreadImplementation;
-- (void)stopListening;
-- (void)startListening;
-@property(nonatomic) struct __CFRunLoop *listenerRunLoop; // @synthesize listenerRunLoop=_listenerRunLoop;
+- (id)allDevices;
 - (void)dealloc;
+@property(nonatomic) struct _AMDeviceNotificationContext *deviceNotificationRef; // @synthesize deviceNotificationRef=_deviceNotificationRef;
+- (void)enumerateDevicesWithBlock:(CDUnknownBlockType)arg1;
+@property(nonatomic) struct __CFRunLoop *listenerRunLoop; // @synthesize listenerRunLoop=_listenerRunLoop;
+@property(retain) NSThread *listenerThread; // @synthesize listenerThread=_listenerThread;
+- (void)listenerThreadImplementation;
+- (void)presentError:(id)arg1;
+- (void)startListening;
+- (void)stopListening;
 
 // Remaining properties
 @property(readonly, copy) NSString *debugDescription;
