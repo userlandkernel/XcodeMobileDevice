@@ -1,0 +1,27 @@
+---
+archs:           [ x86_64 ]
+platform:        macosx
+install-name:    '@rpath/IDEServerTools.framework/Versions/A/IDEServerTools'
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ '+[XCSPlatform(DVTPlatform) platformWithDVTPlatform:validationErrors:]', 
+                       '-[XCSPlatform(DVTPlatform) platformWithSimulatorPlatform:validationErrors:]', 
+                       '-[XCSPlatformList .cxx_destruct]', '-[XCSPlatformList JSONRepresentation]', 
+                       '-[XCSPlatformList addPlatform:]', '-[XCSPlatformList addPlatforms:]', 
+                       '-[XCSPlatformList addSimulatorPlatform:]', '-[XCSPlatformList blocksForSavingOnService:]', 
+                       '-[XCSPlatformList init]', '-[XCSPlatformList platforms]', 
+                       '-[XCSPlatformList setPlatforms:]', '-[XCSPlatformManager .cxx_destruct]', 
+                       '-[XCSPlatformManager allPlatforms]', '-[XCSPlatformManager initWithService:]', 
+                       '-[XCSPlatformManager platformsJSON]', '-[XCSPlatformManager saveAvailablePlatformsWithError:]', 
+                       '-[XCSPlatformManager service]', GCC_except_table2, 
+                       _IDEServerToolsVersionNumber, _IDEServerToolsVersionString, 
+                       '___44-[XCSPlatformList blocksForSavingOnService:]_block_invoke', 
+                       '___54-[XCSPlatformManager saveAvailablePlatformsWithError:]_block_invoke', 
+                       ___Block_byref_object_copy_, ___Block_byref_object_dispose_, 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.96, 
+                       ___copy_helper_block_, ___copy_helper_block_.93, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.94, 
+                       _platformVersionWithError ]
+    objc-classes:    [ _XCSPlatformList, _XCSPlatformManager ]
+    objc-ivars:      [ _XCSPlatformManager._service, _XCSPlatformList._platforms ]
+...

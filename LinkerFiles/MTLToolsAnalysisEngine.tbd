@@ -1,0 +1,41 @@
+---
+archs:           [ x86_64 ]
+platform:        macosx
+install-name:    '@rpath/MTLToolsAnalysisEngine.framework/Versions/A/MTLToolsAnalysisEngine'
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ '-[DYMTLAnalyzerArchiveVisitor generateFindingsAndAddTo:singleFrameMode:]', 
+                       '+[DYMTLAnalyzerHeuristic supportsAPI:]', '-[DYMTLAnalyzerFinding .cxx_destruct]', 
+                       '-[DYMTLAnalyzerFinding _getLocalizedStringFromBundle:withKey:table:]', 
+                       '-[DYMTLAnalyzerFinding _simplifiedDetailsStringSubstituted:plural:]', 
+                       '-[DYMTLAnalyzerFinding initWithPlatform:]', '-[DYMTLAnalyzerFinding initWithPlatform:unsorted:]', 
+                       '-[DYMTLAnalyzerFinding isBufferDataCompletelyUpdated]', 
+                       '-[DYMTLAnalyzerFinding isDataRestoreUnnecessaryForFunc:targetArgIndex:objectType:analyzerEngine:]', 
+                       '-[DYMTLAnalyzerFinding isEncoderStatistics]', '-[DYMTLAnalyzerFinding isFrameStatistics]', 
+                       '-[DYMTLAnalyzerFinding isInefficientStateUpdate]', 
+                       '-[DYMTLAnalyzerFinding isRedundantCallOrQuery]', 
+                       '-[DYMTLAnalyzerFinding isRedundantCall]', '-[DYMTLAnalyzerFinding isTextureImageCompletelyUpdated]', 
+                       '-[DYMTLAnalyzerFinding localizedKind]', '-[DYMTLAnalyzerFinding synopsis]', 
+                       '-[DYMTLAnalyzerHeuristic _setGenerationEnvironmentForFinding:]', 
+                       '-[DYMTLAnalyzerHeuristic addFunctionIndexOfMipFilterChange:textureID:]', 
+                       '-[DYMTLAnalyzerHeuristic addFunctionIndicesForTextureCreationAndMipLevelUpdate:textureID:]', 
+                       '-[DYMTLAnalyzerHeuristic appendObjectDescription:objectType:objectID:andShortDesc:]', 
+                       '-[DYMTLAnalyzerHeuristic findingWithUnsorted:]', 
+                       '-[DYMTLAnalyzerHeuristic finding]', '-[DYMTLAnalyzerHeuristic objectDescription:objectID:]', 
+                       '-[DYMTLAnalyzerHeuristic processFunction:stateMirrorRetCode:]', 
+                       '-[DYMTLAnalyzerHeuristicPool initWithEngine:graphicsEngineID:]', 
+                       '-[DYMTLAnalyzerHeuristicPool processPreMirrorHeuristics:captureBlockMode:functionIndex:]', 
+                       GCC_except_table0, GCC_except_table0, GCC_except_table1, 
+                       GCC_except_table2, GCC_except_table2, GCC_except_table3, 
+                       GCC_except_table4, GCC_except_table4, GCC_except_table5, 
+                       GCC_except_table5, GCC_except_table6, _DYFEIMTLEncoderID, 
+                       _DYFEIMTLEncoderType, _DYFEIMTLTextureID, _DYMTLFGDKLoadBandwidth, 
+                       _DYMTLFGDKNumBlitEncoders, _DYMTLFGDKNumCommandBuffers, 
+                       _DYMTLFGDKNumComputeEncoders, _DYMTLFGDKNumDispatchCalls, 
+                       _DYMTLFGDKNumDrawCalls, _DYMTLFGDKNumRenderEncoders, 
+                       _DYMTLFGDKStoreBandwidth, _DYMTLFKPerEncoderStatistics, 
+                       _DYMTLFKPerFrameStatistics ]
+    objc-classes:    [ _DYMTLAnalyzerArchiveVisitor, _DYMTLAnalyzerFinding, 
+                       _DYMTLAnalyzerHeuristic, _DYMTLAnalyzerHeuristicPool ]
+    objc-ivars:      [ _DYMTLAnalyzerFinding._pluginBundle ]
+...

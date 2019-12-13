@@ -1,0 +1,51 @@
+---
+archs:           [ x86_64 ]
+platform:        macosx
+install-name:    '@rpath/DVTDeveloperModeHelper.framework/Versions/A/DVTDeveloperModeHelper'
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ '-[DVTDeveloperModeHelper isDeveloperModeEnabled]', 
+                       '+[DVTDeveloperModeAlertHelper initialize]', '-[DVTDeveloperModeAlertHelper .cxx_destruct]', 
+                       '-[DVTDeveloperModeAlertHelper _performAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:]', 
+                       '-[DVTDeveloperModeAlertHelper _synchronizedAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:]', 
+                       '-[DVTDeveloperModeAlertHelper _synchronizedPerformDeveloperModeAlertCompletionCallbacks]', 
+                       '-[DVTDeveloperModeAlertHelper askToEnableDeveloperModeIfNecessaryWithCompletionHandler:]', 
+                       '-[DVTDeveloperModeAlertHelper informativeText]', 
+                       '-[DVTDeveloperModeAlertHelper messageType]', '-[DVTDeveloperModeAlertHelper parentWindow]', 
+                       '-[DVTDeveloperModeAlertHelper setDeveloperModeWithReturnCode:]', 
+                       '-[DVTDeveloperModeAlertHelper setMessageType:]', 
+                       '-[DVTDeveloperModeAlertHelper setParentWindow:]', 
+                       '-[DVTDeveloperModeAlertHelper setShouldAskUserAboutDeveloperMode:]', 
+                       '-[DVTDeveloperModeAlertHelper shouldAskUserAboutDeveloperMode]', 
+                       '-[DVTDeveloperModeHelper _stringForFileHandleData:]', 
+                       '-[DVTDeveloperModeHelper setDeveloperModeEnabled:]', 
+                       _DVTDeveloperModeHelperVersionNumber, _DVTDeveloperModeHelperVersionString, 
+                       __DVTDeveloperModeAlertIsPromptingUser, __DVTDeveloperModeAlertPendingCompletionHandlers, 
+                       __DVTDeveloperModeAlertPendingCompletionHandlers_block_invoke.label, 
+                       __DVTDeveloperModeAlertPendingCompletionHandlers_block_invoke.onceToken, 
+                       __DVTDeveloperModeAlertPendingCompletionHandlers_block_invoke.result, 
+                       __DVTDeveloperModeAlertSynchronizedQueue, '___101-[DVTDeveloperModeAlertHelper _synchronizedAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:]_block_invoke', 
+                       '___101-[DVTDeveloperModeAlertHelper _synchronizedAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:]_block_invoke_2', 
+                       '___88-[DVTDeveloperModeAlertHelper _synchronizedPerformDeveloperModeAlertCompletionCallbacks]_block_invoke', 
+                       '___88-[DVTDeveloperModeAlertHelper _synchronizedPerformDeveloperModeAlertCompletionCallbacks]_block_invoke_2', 
+                       '___88-[DVTDeveloperModeAlertHelper _synchronizedPerformDeveloperModeAlertCompletionCallbacks]_block_invoke_3', 
+                       '___96-[DVTDeveloperModeAlertHelper _performAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:]_block_invoke', 
+                       '___96-[DVTDeveloperModeAlertHelper _performAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:]_block_invoke_2', 
+                       '___96-[DVTDeveloperModeAlertHelper _performAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:]_block_invoke_3', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.102, 
+                       ___block_descriptor_tmp.109, ___block_descriptor_tmp.51, 
+                       ___block_descriptor_tmp.65, ___block_descriptor_tmp.68, 
+                       ___block_descriptor_tmp.69, ___block_descriptor_tmp.71, 
+                       ___block_literal_global, ___block_literal_global.70, 
+                       ___block_literal_global.72, ___copy_helper_block_, 
+                       ___copy_helper_block_.107, ___copy_helper_block_.49, 
+                       ___copy_helper_block_.66, ___copy_helper_block_.99, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.100, 
+                       ___destroy_helper_block_.108, ___destroy_helper_block_.50, 
+                       ___destroy_helper_block_.67, '__performAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:.label', 
+                       '__performAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:.onceToken', 
+                       '__performAskToEnableDeveloperModeIfNecessaryWithCompletionHandler:.result' ]
+    objc-classes:    [ _DVTDeveloperModeAlertHelper, _DVTDeveloperModeHelper ]
+    objc-ivars:      [ _DVTDeveloperModeAlertHelper._shouldAskUserAboutDeveloperMode, 
+                       _DVTDeveloperModeAlertHelper._messageType, _DVTDeveloperModeAlertHelper._parentWindow ]
+...

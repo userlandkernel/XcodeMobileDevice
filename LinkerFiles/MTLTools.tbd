@@ -1,0 +1,42 @@
+---
+archs:           [ x86_64 ]
+platform:        macosx
+install-name:    '@rpath/MTLTools.framework/Versions/A/MTLTools'
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ '-[DYMTLCommandQueueInfo initWithCommandQueue:]', 
+                       '+[DYMTLCaptureSessionInfo captureSessionInfoWithCaptureStore:]', 
+                       '-[DYMTLCaptureSessionInfo .cxx_destruct]', '-[DYMTLCaptureSessionInfo _isBackwardsCompatible:isInternal:]', 
+                       '-[DYMTLCaptureSessionInfo canPlaybackOnDeviceWithInfo:limitBackwardsCompatibility:isInternal:]', 
+                       '-[DYMTLCaptureSessionInfo capturedCommandQueueAddress]', 
+                       '-[DYMTLCaptureSessionInfo deviceProfiles]', '-[DYMTLCaptureSessionInfo initWithCaptureStore:]', 
+                       '-[DYMTLCommandQueueInfo .cxx_destruct]', '-[DYMTLCommandQueueInfo _isInternalQueueWhitelisted:]', 
+                       '-[DYMTLCommandQueueInfo canBeCaptured]', '-[DYMTLCommandQueueInfo copyWithZone:]', 
+                       '-[DYMTLCommandQueueInfo description]', '-[DYMTLCommandQueueInfo deviceAddress]', 
+                       '-[DYMTLCommandQueueInfo displayName]', '-[DYMTLCommandQueueInfo encodeWithCoder:]', 
+                       '-[DYMTLCommandQueueInfo initWithCoder:]', '-[DYMTLCommandQueueInfo isInternalQueue]', 
+                       '-[DYMTLCommandQueueInfo isOpenGLQueue]', '-[DYMTLCommandQueueInfo label]', 
+                       '-[DYMTLCommandQueueInfo queueAddress]', '-[DYMTLCommandQueueInfo setCanBeCaptured:]', 
+                       '-[DYMTLCommandQueueInfo setIsOpenGLQueue:]', '-[DYMTLDeviceProfile .cxx_destruct]', 
+                       '-[DYMTLDeviceProfile copyWithZone:]', '-[DYMTLDeviceProfile description]', 
+                       '-[DYMTLDeviceProfile encodeWithCoder:]', '-[DYMTLDeviceProfile initWithCoder:]', 
+                       '-[DYMTLDeviceProfile name]', '-[DYMTLDeviceProfile supportedFeatureSets]', 
+                       '-[DYMTLDeviceProfile supportsCapabilitiesOfGraphicsAPI:]', 
+                       GCC_except_table0, GCC_except_table0, GCC_except_table1, 
+                       GCC_except_table1, GCC_except_table2, GCC_except_table2, 
+                       GCC_except_table3, GCC_except_table3, GCC_except_table4, 
+                       GCC_except_table7, '___56-[DYMTLDeviceProfile supportsCapabilitiesOfGraphicsAPI:]_block_invoke', 
+                       '___94-[DYMTLCaptureSessionInfo canPlaybackOnDeviceWithInfo:limitBackwardsCompatibility:isInternal:]_block_invoke', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp, 
+                       ___copy_helper_block_, ___copy_helper_block_, ___destroy_helper_block_, 
+                       ___destroy_helper_block_, '__isInternalQueueWhitelisted:.whitelistedLabels', 
+                       _gDYMTLShaderProfilerProgramTypeKeys ]
+    objc-classes:    [ _DYMTLCaptureSessionInfo, _DYMTLCommandQueueInfo, 
+                       _DYMTLDeviceProfile ]
+    objc-ivars:      [ _DYMTLCommandQueueInfo._deviceAddress, _DYMTLCaptureSessionInfo._capturedCommandQueueAddress, 
+                       _DYMTLCaptureSessionInfo._deviceProfiles, _DYMTLCommandQueueInfo._canBeCaptured, 
+                       _DYMTLCommandQueueInfo._displayName, _DYMTLCommandQueueInfo._isInternalQueue, 
+                       _DYMTLCommandQueueInfo._isOpenGLQueue, _DYMTLCommandQueueInfo._label, 
+                       _DYMTLCommandQueueInfo._queueAddress, _DYMTLDeviceProfile._name, 
+                       _DYMTLDeviceProfile._supportedFeatureSets ]
+...

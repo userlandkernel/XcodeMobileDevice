@@ -7,6 +7,7 @@ If GitHub will proceed action when any of the involved parties claims a DMCA vio
 
 # People to thank
 - Steve Nygard (Class-dump)
+- Siguza [tbdump](https://github.com/siguza/tbdump)
 
 # Contributing?
 - Remove the properties and methods from the headers that break using the frameworks (eg dealloc).

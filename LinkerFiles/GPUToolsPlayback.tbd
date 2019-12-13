@@ -1,0 +1,62 @@
+---
+archs:           [ x86_64 ]
+platform:        macosx
+install-name:    '@rpath/GPUToolsPlayback.framework/Versions/A/GPUToolsPlayback'
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ '-[DYReplayController init]', '+[DYReplayController sharedController]', 
+                       '-[DYReplayController .cxx_destruct]', '-[DYReplayController _archiveDirectory]', 
+                       '-[DYReplayController _beginDebugArchive]', '-[DYReplayController _deleteAllArchives]', 
+                       '-[DYReplayController _displayPlaybackEngine]', 
+                       '-[DYReplayController _endPlayback]', '-[DYReplayController _handleArchiveLoadingForPlaybackRequest:replyKind:]', 
+                       '-[DYReplayController _loadArchives:error:]', '-[DYReplayController _playbackArchiveWithExperiment:passingFuture:resolvingFuture:]', 
+                       '-[DYReplayController _playbackCurrentArchiveAndExperiments]', 
+                       '-[DYReplayController _processMessage:]', '-[DYReplayController _recursivePlaybackWithFuture:usingExperiment:withToplevelFuture:]', 
+                       '-[DYReplayController _replayDebugArchiveTo:replyTo:]', 
+                       '-[DYReplayController _replayerControllerSupportForCaptureStore:]', 
+                       '-[DYReplayController archiveStack]', '-[DYReplayController dealloc]', 
+                       '-[DYReplayController experiments]', '-[DYReplayController informReady]', 
+                       '-[DYReplayController initializeTransportWith:]', 
+                       '-[DYReplayController origSourceMessageHandler]', 
+                       '-[DYReplayController playbackArchive:]', '-[DYReplayController playbackEngine]', 
+                       '-[DYReplayController profileInfo]', '-[DYReplayController queue]', 
+                       '-[DYReplayController replayControllerSupport]', 
+                       '-[DYReplayController replayMessage]', '-[DYReplayController setArchiveStack:]', 
+                       '-[DYReplayController setExperiments:]', '-[DYReplayController setOrigSourceMessageHandler:]', 
+                       '-[DYReplayController setPlaybackEngine:]', '-[DYReplayController setProfileInfo:]', 
+                       '-[DYReplayController setQueue:]', '-[DYReplayController setReplayControllerSupport:]', 
+                       '-[DYReplayController setReplayMessage:]', '-[DYReplayController setSource:]', 
+                       '-[DYReplayController setTransport:]', '-[DYReplayController source]', 
+                       '-[DYReplayController transport]', GCC_except_table0, 
+                       GCC_except_table1, GCC_except_table13, GCC_except_table14, 
+                       GCC_except_table20, GCC_except_table21, GCC_except_table22, 
+                       GCC_except_table23, GCC_except_table24, GCC_except_table25, 
+                       GCC_except_table26, GCC_except_table27, GCC_except_table30, 
+                       GCC_except_table33, GCC_except_table34, GCC_except_table37, 
+                       GCC_except_table38, GCC_except_table4, GCC_except_table5, 
+                       GCC_except_table8, GCC_except_table9, '___38-[DYReplayController _processMessage:]_block_invoke', 
+                       '___38-[DYReplayController playbackArchive:]_block_invoke', 
+                       '___40-[DYReplayController _beginDebugArchive]_block_invoke', 
+                       '___46-[DYReplayController initializeTransportWith:]_block_invoke', 
+                       '___52-[DYReplayController _replayDebugArchiveTo:replyTo:]_block_invoke', 
+                       '___83-[DYReplayController _playbackArchiveWithExperiment:passingFuture:resolvingFuture:]_block_invoke', 
+                       '___83-[DYReplayController _playbackArchiveWithExperiment:passingFuture:resolvingFuture:]_block_invoke.260', 
+                       ___block_descriptor_tmp, ___block_descriptor_tmp.168, 
+                       ___block_descriptor_tmp.255, ___block_descriptor_tmp.269, 
+                       ___block_descriptor_tmp.274, ___block_descriptor_tmp.279, 
+                       ___block_descriptor_tmp.82, ___copy_helper_block_, 
+                       ___copy_helper_block_.166, ___copy_helper_block_.253, 
+                       ___copy_helper_block_.267, ___copy_helper_block_.272, 
+                       ___copy_helper_block_.277, ___copy_helper_block_.79, 
+                       ___destroy_helper_block_, ___destroy_helper_block_.167, 
+                       ___destroy_helper_block_.254, ___destroy_helper_block_.268, 
+                       ___destroy_helper_block_.273, ___destroy_helper_block_.278, 
+                       ___destroy_helper_block_.80 ]
+    weak-def-symbols: [ ___clang_call_terminate ]
+    objc-classes:    [ _DYReplayController ]
+    objc-ivars:      [ _DYReplayController.queue, _DYReplayController.archiveStack, 
+                       _DYReplayController.experiments, _DYReplayController.origSourceMessageHandler, 
+                       _DYReplayController.playbackEngine, _DYReplayController.profileInfo, 
+                       _DYReplayController.replayControllerSupport, _DYReplayController.replayMessage, 
+                       _DYReplayController.source, _DYReplayController.transport ]
+...

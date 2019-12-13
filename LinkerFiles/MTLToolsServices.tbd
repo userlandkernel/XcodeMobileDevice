@@ -1,0 +1,34 @@
+---
+archs:           [ x86_64 ]
+platform:        macosx
+install-name:    '@rpath/MTLToolsServices.framework/Versions/A/MTLToolsServices'
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ '-[DYMTLCaptureSession _postProcessArchive]', '+[DYMTLCapturingLoopingDeltaGenerator _createEmptyFunctionBufferStream]', 
+                       '-[DYMTLCaptureSession _saveAPISpecificData:]', 
+                       '-[DYMTLCaptureSession _setupFinalConfigurationDictionary:]', 
+                       '-[DYMTLCaptureSession captureCommandQueueAddress]', 
+                       '-[DYMTLCaptureSession setCaptureCommandQueueAddress:]', 
+                       '-[DYMTLCapturingLoopingDeltaGenerator .cxx_destruct]', 
+                       '-[DYMTLCapturingLoopingDeltaGenerator _determineUnrestoredTexturesWithArchive:]', 
+                       '-[DYMTLCapturingLoopingDeltaGenerator init]', '-[DYMTLCapturingLoopingDeltaGenerator visitCaptureArchive:]', 
+                       '-[DYMTLGuestAppSession _handleTransportMessage:]', 
+                       '-[DYMTLGuestAppSession deviceWrapper]', '-[DYMTLGuestAppSession initWithGuestApp:device:deferLaunch:]', 
+                       '-[DYMTLGuestAppSession launch]', '-[DYMTLGuestAppSession newCaptureSessionWithArchive:]', 
+                       '-[DYMTLGuestAppSession queryForGraphicsAPIUsage]', 
+                       '-[DYMTLGuestAppSession setDeviceWrapper:]', '-[DYMTLGuestAppSession setValidationMode:]', 
+                       '-[DYMTLGuestAppSession validationMode]', GCC_except_table0, 
+                       GCC_except_table0, GCC_except_table0, GCC_except_table1, 
+                       GCC_except_table1, GCC_except_table1, GCC_except_table2, 
+                       GCC_except_table2, GCC_except_table2, GCC_except_table3, 
+                       GCC_except_table3, GCC_except_table4, GCC_except_table6, 
+                       GCC_except_table7, '___30-[DYMTLGuestAppSession launch]_block_invoke', 
+                       ___block_descriptor_tmp, ___copy_helper_block_, 
+                       ___destroy_helper_block_ ]
+    weak-def-symbols: [ __ZN8GPUTools2FB6Stream5FlushEv ]
+    objc-classes:    [ _DYMTLCaptureSession, _DYMTLCapturingLoopingDeltaGenerator, 
+                       _DYMTLGuestAppSession ]
+    objc-ivars:      [ _DYMTLCaptureSession._captureCommandQueueAddress, 
+                       _DYMTLCapturingLoopingDeltaGenerator._unrestoredTextures, 
+                       _DYMTLGuestAppSession._deviceWrapper, _DYMTLGuestAppSession._validationMode ]
+...
